@@ -1,9 +1,10 @@
-# coding = utf-8
+## coding:utf8
 
 import os
+import sys
 
 if os.getuid() == 0:
     pass
 else:
-    print '当前用户不是root用户，请以root用户执行脚本'
+    print '你不是root用户啊，你得换他来'
     sys.exit(1)
